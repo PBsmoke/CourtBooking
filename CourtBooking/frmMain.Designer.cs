@@ -36,7 +36,6 @@
             this.tabCourtBooking = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.tabManageCourt = new System.Windows.Forms.TabControl();
             this.tabPrommotion = new System.Windows.Forms.TabPage();
-            this.baseListOnTap3 = new Service.Baseform.BaseListOnTap();
             this.tabBooking = new System.Windows.Forms.TabPage();
             this.sidePanel2 = new DevExpress.XtraEditors.SidePanel();
             this.schedulerControl1 = new DevExpress.XtraScheduler.SchedulerControl();
@@ -59,6 +58,7 @@
             this.baseListOnTap5 = new Service.Baseform.BaseListOnTap();
             this.tabUser = new System.Windows.Forms.TabPage();
             this.baseListOnTap6 = new Service.Baseform.BaseListOnTap();
+            this.promotionList1 = new CourtBooking.PromotionList();
             ((System.ComponentModel.ISupportInitialize)(this.tabMain)).BeginInit();
             this.tabMain.SuspendLayout();
             this.tabCourtBooking.SuspendLayout();
@@ -130,7 +130,7 @@
             // 
             // tabPrommotion
             // 
-            this.tabPrommotion.Controls.Add(this.baseListOnTap3);
+            this.tabPrommotion.Controls.Add(this.promotionList1);
             this.tabPrommotion.Location = new System.Drawing.Point(4, 25);
             this.tabPrommotion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPrommotion.Name = "tabPrommotion";
@@ -139,17 +139,6 @@
             this.tabPrommotion.TabIndex = 0;
             this.tabPrommotion.Text = "กำหนด Promotion";
             this.tabPrommotion.UseVisualStyleBackColor = true;
-            // 
-            // baseListOnTap3
-            // 
-            this.baseListOnTap3.AutoSize = true;
-            this.baseListOnTap3.BtnAddText = "";
-            this.baseListOnTap3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.baseListOnTap3.Location = new System.Drawing.Point(4, 5);
-            this.baseListOnTap3.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.baseListOnTap3.Name = "baseListOnTap3";
-            this.baseListOnTap3.Size = new System.Drawing.Size(975, 466);
-            this.baseListOnTap3.TabIndex = 2;
             // 
             // tabBooking
             // 
@@ -391,6 +380,17 @@
             this.baseListOnTap6.Size = new System.Drawing.Size(975, 466);
             this.baseListOnTap6.TabIndex = 2;
             // 
+            // promotionList1
+            // 
+            this.promotionList1.AutoSize = true;
+            this.promotionList1.BtnAddText = "";
+            this.promotionList1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.promotionList1.Location = new System.Drawing.Point(4, 5);
+            this.promotionList1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.promotionList1.Name = "promotionList1";
+            this.promotionList1.Size = new System.Drawing.Size(975, 466);
+            this.promotionList1.TabIndex = 0;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
@@ -455,7 +455,6 @@
         private System.Windows.Forms.TabPage tabUser;
         private System.Windows.Forms.TabPage tabSell;
         private Service.Baseform.BaseListOnTap ListStore;
-        private Service.Baseform.BaseListOnTap baseListOnTap3;
         private Service.Baseform.BaseListOnTap baseListOnTap1;
         private Service.Baseform.BaseListOnTap baseListOnTap2;
         private Service.Baseform.BaseListOnTap baseListOnTap5;
@@ -466,8 +465,7 @@
         private DevExpress.XtraEditors.SidePanel sidePanel2;
         private DevExpress.XtraEditors.SidePanel sidePanel1;
         private Service.Baseform.BaseListOnTap baseListOnTap4;
-
-
+        private CourtBooking.PromotionList promotionList1;
     }
 }
 
