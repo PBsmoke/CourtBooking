@@ -72,6 +72,7 @@
             this.tsSave.Name = "tsSave";
             this.tsSave.Size = new System.Drawing.Size(65, 36);
             this.tsSave.Text = "เพิ่ม";
+            this.tsSave.Click += new System.EventHandler(this.tsSave_Click);
             // 
             // toolStripSeparator2
             // 
@@ -86,6 +87,7 @@
             this.tsEdit.Name = "tsEdit";
             this.tsEdit.Size = new System.Drawing.Size(75, 36);
             this.tsEdit.Text = "แก้ไข";
+            this.tsEdit.Click += new System.EventHandler(this.tsEdit_Click);
             // 
             // toolStripSeparator1
             // 
@@ -100,6 +102,7 @@
             this.tsDelete.Name = "tsDelete";
             this.tsDelete.Size = new System.Drawing.Size(60, 36);
             this.tsDelete.Text = "ลบ";
+            this.tsDelete.Click += new System.EventHandler(this.tsDelete_Click);
             // 
             // toolStripSeparator3
             // 
@@ -120,6 +123,7 @@
             this.tsClear.Name = "tsClear";
             this.tsClear.Size = new System.Drawing.Size(64, 36);
             this.tsClear.Text = "ล้าง";
+            this.tsClear.Click += new System.EventHandler(this.tsClear_Click);
             // 
             // toolStripSeparator5
             // 

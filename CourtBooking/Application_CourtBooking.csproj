@@ -73,6 +73,12 @@
     <Compile Include="CourtBooking\CustomerInfo.Designer.cs">
       <DependentUpon>CustomerInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="CourtBooking\PromotionList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CourtBooking\PromotionList.Designer.cs">
+      <DependentUpon>PromotionList.cs</DependentUpon>
+    </Compile>
     <Compile Include="CourtBooking\PromtionInfo.cs">
       <SubType>Form</SubType>
     </Compile>
