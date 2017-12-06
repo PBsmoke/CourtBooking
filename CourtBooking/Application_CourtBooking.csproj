@@ -79,11 +79,11 @@
     <Compile Include="CourtBooking\PromotionList.Designer.cs">
       <DependentUpon>PromotionList.cs</DependentUpon>
     </Compile>
-    <Compile Include="CourtBooking\PromtionInfo.cs">
+    <Compile Include="CourtBooking\PromotionInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CourtBooking\PromtionInfo.Designer.cs">
-      <DependentUpon>PromtionInfo.cs</DependentUpon>
+    <Compile Include="CourtBooking\PromotionInfo.Designer.cs">
+      <DependentUpon>PromotionInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
@@ -114,8 +114,8 @@
     <EmbeddedResource Include="CourtBooking\CustomerInfo.resx">
       <DependentUpon>CustomerInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CourtBooking\PromtionInfo.resx">
-      <DependentUpon>PromtionInfo.cs</DependentUpon>
+    <EmbeddedResource Include="CourtBooking\PromotionInfo.resx">
+      <DependentUpon>PromotionInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>

@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace CourtBooking.CourtBooking
 {
-    public partial class PromtionInfo : BaseInfoForm
+    public partial class PromotionInfo : BaseInfoForm
     {
-        public PromtionInfo()
+        public PromotionInfo()
         {
             InitializeComponent();
         }

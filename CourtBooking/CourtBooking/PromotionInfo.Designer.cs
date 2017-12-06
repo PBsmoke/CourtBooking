@@ -1,6 +1,6 @@
 ﻿namespace CourtBooking.CourtBooking
 {
-    partial class PromtionInfo
+    partial class PromotionInfo
     {
         /// <summary>
         /// Required designer variable.
