@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CourtBooking.CourtBooking;
 using Service;
 
 namespace CourtBooking
@@ -37,6 +38,20 @@ namespace CourtBooking
                     break;
             }
                    
+        }
+
+        private void btnBooking_Click(object sender, EventArgs e)
+        {
+            BookingInfo frmForm = new BookingInfo();
+            frmForm.ShowDialog();
+            //btnStatus(true);
+        }
+
+        private void btnConfirmBooking_Click(object sender, EventArgs e)
+        {
+            ConfirmBookingInfo frmForm = new ConfirmBookingInfo();
+            frmForm.ShowDialog();
+            //btnStatus(true);
         }
     }
 }

@@ -71,6 +71,12 @@
     <Compile Include="Administrator\UserList.Designer.cs">
       <DependentUpon>UserList.cs</DependentUpon>
     </Compile>
+    <Compile Include="CourtBooking\BookingInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CourtBooking\BookingInfo.Designer.cs">
+      <DependentUpon>BookingInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="CourtBooking\ConfirmBookingInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,6 +183,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Administrator\UserInfo.resx">
       <DependentUpon>UserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CourtBooking\BookingInfo.resx">
+      <DependentUpon>BookingInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CourtBooking\ConfirmBookingInfo.resx">
       <DependentUpon>ConfirmBookingInfo.cs</DependentUpon>

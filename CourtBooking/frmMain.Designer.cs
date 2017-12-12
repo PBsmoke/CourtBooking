@@ -29,23 +29,24 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraScheduler.TimeRuler timeRuler1 = new DevExpress.XtraScheduler.TimeRuler();
-            DevExpress.XtraScheduler.TimeRuler timeRuler2 = new DevExpress.XtraScheduler.TimeRuler();
-            DevExpress.XtraScheduler.TimeRuler timeRuler3 = new DevExpress.XtraScheduler.TimeRuler();
+            DevExpress.XtraScheduler.TimeRuler timeRuler4 = new DevExpress.XtraScheduler.TimeRuler();
+            DevExpress.XtraScheduler.TimeRuler timeRuler5 = new DevExpress.XtraScheduler.TimeRuler();
+            DevExpress.XtraScheduler.TimeRuler timeRuler6 = new DevExpress.XtraScheduler.TimeRuler();
             this.tabMain = new DevExpress.XtraBars.Navigation.TabPane();
             this.tabCourtBooking = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.tabManageCourt = new System.Windows.Forms.TabControl();
             this.tabPrommotion = new System.Windows.Forms.TabPage();
             this.promotionList = new CourtBooking.PromotionList();
+            this.tabMember = new System.Windows.Forms.TabPage();
+            this.customerList1 = new CourtBooking.CustomerList();
             this.tabBooking = new System.Windows.Forms.TabPage();
             this.sidePanel2 = new DevExpress.XtraEditors.SidePanel();
             this.schedulerControl1 = new DevExpress.XtraScheduler.SchedulerControl();
             this.schedulerStorage1 = new DevExpress.XtraScheduler.SchedulerStorage(this.components);
             this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
             this.calendarControl1 = new DevExpress.XtraEditors.Controls.CalendarControl();
-            this.tabMember = new System.Windows.Forms.TabPage();
-            this.customerList1 = new CourtBooking.CustomerList();
             this.tabConfirmBooking = new System.Windows.Forms.TabPage();
+            this.confirmBookingList1 = new CourtBooking.ConfirmBookingList();
             this.tabPOS = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.tabManagePOS = new System.Windows.Forms.TabControl();
             this.tabUnit = new System.Windows.Forms.TabPage();
@@ -62,19 +63,20 @@
             this.tabManageSetup = new System.Windows.Forms.TabControl();
             this.tabUser = new System.Windows.Forms.TabPage();
             this.userList1 = new Administrator.UserList();
-            this.confirmBookingList1 = new CourtBooking.ConfirmBookingList();
+            this.btnBooking = new DevExpress.XtraEditors.SimpleButton();
+            this.btnConfirmBooking = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.tabMain)).BeginInit();
             this.tabMain.SuspendLayout();
             this.tabCourtBooking.SuspendLayout();
             this.tabManageCourt.SuspendLayout();
             this.tabPrommotion.SuspendLayout();
+            this.tabMember.SuspendLayout();
             this.tabBooking.SuspendLayout();
             this.sidePanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerStorage1)).BeginInit();
             this.sidePanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.calendarControl1.CalendarTimeProperties)).BeginInit();
-            this.tabMember.SuspendLayout();
             this.tabConfirmBooking.SuspendLayout();
             this.tabPOS.SuspendLayout();
             this.tabManagePOS.SuspendLayout();
@@ -158,6 +160,29 @@
             this.promotionList.Size = new System.Drawing.Size(975, 466);
             this.promotionList.TabIndex = 0;
             // 
+            // tabMember
+            // 
+            this.tabMember.Controls.Add(this.customerList1);
+            this.tabMember.Location = new System.Drawing.Point(4, 25);
+            this.tabMember.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabMember.Name = "tabMember";
+            this.tabMember.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabMember.Size = new System.Drawing.Size(983, 476);
+            this.tabMember.TabIndex = 2;
+            this.tabMember.Text = "ข้อมูลลูกค้า";
+            this.tabMember.UseVisualStyleBackColor = true;
+            // 
+            // customerList1
+            // 
+            this.customerList1.AutoSize = true;
+            this.customerList1.BtnAddText = "";
+            this.customerList1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.customerList1.Location = new System.Drawing.Point(4, 5);
+            this.customerList1.Margin = new System.Windows.Forms.Padding(4);
+            this.customerList1.Name = "customerList1";
+            this.customerList1.Size = new System.Drawing.Size(975, 466);
+            this.customerList1.TabIndex = 0;
+            // 
             // tabBooking
             // 
             this.tabBooking.Controls.Add(this.sidePanel2);
@@ -191,14 +216,16 @@
             this.schedulerControl1.Start = new System.DateTime(2017, 12, 5, 0, 0, 0, 0);
             this.schedulerControl1.TabIndex = 1;
             this.schedulerControl1.Text = "schedulerControl1";
-            this.schedulerControl1.Views.DayView.TimeRulers.Add(timeRuler1);
+            this.schedulerControl1.Views.DayView.TimeRulers.Add(timeRuler4);
             this.schedulerControl1.Views.FullWeekView.Enabled = true;
-            this.schedulerControl1.Views.FullWeekView.TimeRulers.Add(timeRuler2);
+            this.schedulerControl1.Views.FullWeekView.TimeRulers.Add(timeRuler5);
             this.schedulerControl1.Views.WeekView.Enabled = false;
-            this.schedulerControl1.Views.WorkWeekView.TimeRulers.Add(timeRuler3);
+            this.schedulerControl1.Views.WorkWeekView.TimeRulers.Add(timeRuler6);
             // 
             // sidePanel1
             // 
+            this.sidePanel1.Controls.Add(this.btnConfirmBooking);
+            this.sidePanel1.Controls.Add(this.btnBooking);
             this.sidePanel1.Controls.Add(this.calendarControl1);
             this.sidePanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidePanel1.Location = new System.Drawing.Point(4, 5);
@@ -217,29 +244,6 @@
             this.calendarControl1.Size = new System.Drawing.Size(254, 227);
             this.calendarControl1.TabIndex = 0;
             // 
-            // tabMember
-            // 
-            this.tabMember.Controls.Add(this.customerList1);
-            this.tabMember.Location = new System.Drawing.Point(4, 25);
-            this.tabMember.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabMember.Name = "tabMember";
-            this.tabMember.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabMember.Size = new System.Drawing.Size(983, 476);
-            this.tabMember.TabIndex = 2;
-            this.tabMember.Text = "ข้อมูลลูกค้า";
-            this.tabMember.UseVisualStyleBackColor = true;
-            // 
-            // customerList1
-            // 
-            this.customerList1.AutoSize = true;
-            this.customerList1.BtnAddText = "";
-            this.customerList1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.customerList1.Location = new System.Drawing.Point(4, 5);
-            this.customerList1.Margin = new System.Windows.Forms.Padding(4);
-            this.customerList1.Name = "customerList1";
-            this.customerList1.Size = new System.Drawing.Size(975, 466);
-            this.customerList1.TabIndex = 0;
-            // 
             // tabConfirmBooking
             // 
             this.tabConfirmBooking.Controls.Add(this.confirmBookingList1);
@@ -250,6 +254,17 @@
             this.tabConfirmBooking.TabIndex = 3;
             this.tabConfirmBooking.Text = "ยืนยันการจองสนาม";
             this.tabConfirmBooking.UseVisualStyleBackColor = true;
+            // 
+            // confirmBookingList1
+            // 
+            this.confirmBookingList1.AutoSize = true;
+            this.confirmBookingList1.BtnAddText = "";
+            this.confirmBookingList1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.confirmBookingList1.Location = new System.Drawing.Point(3, 3);
+            this.confirmBookingList1.Margin = new System.Windows.Forms.Padding(4);
+            this.confirmBookingList1.Name = "confirmBookingList1";
+            this.confirmBookingList1.Size = new System.Drawing.Size(977, 470);
+            this.confirmBookingList1.TabIndex = 0;
             // 
             // tabPOS
             // 
@@ -431,16 +446,23 @@
             this.userList1.Size = new System.Drawing.Size(975, 466);
             this.userList1.TabIndex = 0;
             // 
-            // confirmBookingList1
+            // btnBooking
             // 
-            this.confirmBookingList1.AutoSize = true;
-            this.confirmBookingList1.BtnAddText = "";
-            this.confirmBookingList1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.confirmBookingList1.Location = new System.Drawing.Point(3, 3);
-            this.confirmBookingList1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.confirmBookingList1.Name = "confirmBookingList1";
-            this.confirmBookingList1.Size = new System.Drawing.Size(977, 470);
-            this.confirmBookingList1.TabIndex = 0;
+            this.btnBooking.Location = new System.Drawing.Point(-1, 233);
+            this.btnBooking.Name = "btnBooking";
+            this.btnBooking.Size = new System.Drawing.Size(256, 23);
+            this.btnBooking.TabIndex = 1;
+            this.btnBooking.Text = "จองสนาม";
+            this.btnBooking.Click += new System.EventHandler(this.btnBooking_Click);
+            // 
+            // btnConfirmBooking
+            // 
+            this.btnConfirmBooking.Location = new System.Drawing.Point(-1, 262);
+            this.btnConfirmBooking.Name = "btnConfirmBooking";
+            this.btnConfirmBooking.Size = new System.Drawing.Size(256, 23);
+            this.btnConfirmBooking.TabIndex = 2;
+            this.btnConfirmBooking.Text = "ยืนยันการจองสนาม";
+            this.btnConfirmBooking.Click += new System.EventHandler(this.btnConfirmBooking_Click);
             // 
             // frmMain
             // 
@@ -461,6 +483,8 @@
             this.tabManageCourt.ResumeLayout(false);
             this.tabPrommotion.ResumeLayout(false);
             this.tabPrommotion.PerformLayout();
+            this.tabMember.ResumeLayout(false);
+            this.tabMember.PerformLayout();
             this.tabBooking.ResumeLayout(false);
             this.sidePanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.schedulerControl1)).EndInit();
@@ -468,8 +492,6 @@
             this.sidePanel1.ResumeLayout(false);
             this.sidePanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.calendarControl1.CalendarTimeProperties)).EndInit();
-            this.tabMember.ResumeLayout(false);
-            this.tabMember.PerformLayout();
             this.tabConfirmBooking.ResumeLayout(false);
             this.tabConfirmBooking.PerformLayout();
             this.tabPOS.ResumeLayout(false);
@@ -525,6 +547,8 @@
         private POS.GetProductsList getProductsList1;
         private System.Windows.Forms.TabPage tabConfirmBooking;
         private CourtBooking.ConfirmBookingList confirmBookingList1;
+        private DevExpress.XtraEditors.SimpleButton btnConfirmBooking;
+        private DevExpress.XtraEditors.SimpleButton btnBooking;
     }
 }
 
