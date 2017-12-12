@@ -60,7 +60,7 @@ namespace Service.ClassService
         {
             if (mySQLConn.State != ConnectionState.Open)
             {
-                OpenConn();
+                //OpenConn();
             }
         }
 

@@ -1,4 +1,4 @@
-﻿namespace CourtBooking.Administrator
+﻿namespace CourtBooking.POS
 {
     partial class ProductsInfo
     {
@@ -38,10 +38,14 @@
             this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.textBox1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -53,6 +57,8 @@
             // 
             // labelControl1
             // 
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.labelControl1.Appearance.Options.UseForeColor = true;
             this.labelControl1.Location = new System.Drawing.Point(12, 57);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(45, 13);
@@ -68,6 +74,8 @@
             // 
             // labelControl2
             // 
+            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.labelControl2.Appearance.Options.UseForeColor = true;
             this.labelControl2.Location = new System.Drawing.Point(12, 83);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(40, 13);
@@ -119,11 +127,27 @@
             this.labelControl5.TabIndex = 139;
             this.labelControl5.Text = "ประเภทสินค้า";
             // 
+            // gridControl1
+            // 
+            this.gridControl1.Location = new System.Drawing.Point(12, 159);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(592, 227);
+            this.gridControl1.TabIndex = 140;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
+            // 
             // ProductsInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(616, 398);
+            this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.labelControl5);
             this.Controls.Add(this.textEdit2);
             this.Controls.Add(this.labelControl4);
@@ -135,6 +159,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.labelControl2);
             this.Name = "ProductsInfo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "สินค้า";
             this.Controls.SetChildIndex(this.labelControl2, 0);
             this.Controls.SetChildIndex(this.textBox2, 0);
@@ -146,10 +171,13 @@
             this.Controls.SetChildIndex(this.labelControl4, 0);
             this.Controls.SetChildIndex(this.textEdit2, 0);
             this.Controls.SetChildIndex(this.labelControl5, 0);
+            this.Controls.SetChildIndex(this.gridControl1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.textBox1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -167,5 +195,7 @@
         private DevExpress.XtraEditors.TextEdit textEdit2;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl5;
+        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
     }
 }

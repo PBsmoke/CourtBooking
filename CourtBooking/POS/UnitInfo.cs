@@ -11,11 +11,16 @@ using System.Windows.Forms;
 
 namespace CourtBooking.POS
 {
-    public partial class SellInfo : BaseInfoForm
+    public partial class UnitInfo : BaseInfoForm
     {
-        public SellInfo()
+        public UnitInfo()
         {
             InitializeComponent();
+        }
+
+        private void labelControl1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

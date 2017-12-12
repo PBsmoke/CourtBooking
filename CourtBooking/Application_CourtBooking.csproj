@@ -33,9 +33,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.Data.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Diagram.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraDiagram.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -43,6 +45,7 @@
     <Reference Include="DevExpress.XtraScheduler.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraScheduler.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraTreeList.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -53,6 +56,7 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Administrator\UserInfo.cs">
@@ -61,17 +65,35 @@
     <Compile Include="Administrator\UserInfo.Designer.cs">
       <DependentUpon>UserInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Administrator\PermissionInfo.cs">
+    <Compile Include="Administrator\UserList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Administrator\UserList.Designer.cs">
+      <DependentUpon>UserList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CourtBooking\ConfirmBookingInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrator\PermissionInfo.Designer.cs">
-      <DependentUpon>PermissionInfo.cs</DependentUpon>
+    <Compile Include="CourtBooking\ConfirmBookingInfo.Designer.cs">
+      <DependentUpon>ConfirmBookingInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CourtBooking\ConfirmBookingList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CourtBooking\ConfirmBookingList.Designer.cs">
+      <DependentUpon>ConfirmBookingList.cs</DependentUpon>
     </Compile>
     <Compile Include="CourtBooking\CustomerInfo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CourtBooking\CustomerInfo.Designer.cs">
       <DependentUpon>CustomerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CourtBooking\CustomerList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CourtBooking\CustomerList.Designer.cs">
+      <DependentUpon>CustomerList.cs</DependentUpon>
     </Compile>
     <Compile Include="CourtBooking\PromotionList.cs">
       <SubType>UserControl</SubType>
@@ -91,11 +113,35 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="POS\GetProducts.cs">
+    <Compile Include="POS\GetProductsInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="POS\GetProducts.designer.cs">
-      <DependentUpon>GetProducts.cs</DependentUpon>
+    <Compile Include="POS\GetProductsInfo.designer.cs">
+      <DependentUpon>GetProductsInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POS\GetProductsList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="POS\GetProductsList.Designer.cs">
+      <DependentUpon>GetProductsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POS\ProductsList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="POS\ProductsList.Designer.cs">
+      <DependentUpon>ProductsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POS\ProductTypeInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POS\ProductTypeInfo.Designer.cs">
+      <DependentUpon>ProductTypeInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POS\ProductTypeList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="POS\ProductTypeList.Designer.cs">
+      <DependentUpon>ProductTypeList.cs</DependentUpon>
     </Compile>
     <Compile Include="POS\SellInfo.cs">
       <SubType>Form</SubType>
@@ -109,19 +155,31 @@
     <Compile Include="POS\ProductsInfo.Designer.cs">
       <DependentUpon>ProductsInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="POS\Unit.cs">
+    <Compile Include="POS\SellList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="POS\SellList.Designer.cs">
+      <DependentUpon>SellList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POS\UnitInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="POS\Unit.designer.cs">
-      <DependentUpon>Unit.cs</DependentUpon>
+    <Compile Include="POS\UnitInfo.designer.cs">
+      <DependentUpon>UnitInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POS\UnitList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="POS\UnitList.Designer.cs">
+      <DependentUpon>UnitList.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Administrator\UserInfo.resx">
       <DependentUpon>UserInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrator\PermissionInfo.resx">
-      <DependentUpon>PermissionInfo.cs</DependentUpon>
+    <EmbeddedResource Include="CourtBooking\ConfirmBookingInfo.resx">
+      <DependentUpon>ConfirmBookingInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CourtBooking\CustomerInfo.resx">
       <DependentUpon>CustomerInfo.cs</DependentUpon>
@@ -132,8 +190,11 @@
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="POS\GetProducts.resx">
-      <DependentUpon>GetProducts.cs</DependentUpon>
+    <EmbeddedResource Include="POS\GetProductsInfo.resx">
+      <DependentUpon>GetProductsInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POS\ProductTypeInfo.resx">
+      <DependentUpon>ProductTypeInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="POS\SellInfo.resx">
       <DependentUpon>SellInfo.cs</DependentUpon>
@@ -141,8 +202,8 @@
     <EmbeddedResource Include="POS\ProductsInfo.resx">
       <DependentUpon>ProductsInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="POS\Unit.resx">
-      <DependentUpon>Unit.cs</DependentUpon>
+    <EmbeddedResource Include="POS\UnitInfo.resx">
+      <DependentUpon>UnitInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

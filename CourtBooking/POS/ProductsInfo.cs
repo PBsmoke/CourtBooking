@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CourtBooking.Administrator
+namespace CourtBooking.POS
 {
     public partial class ProductsInfo : BaseInfoForm
     {

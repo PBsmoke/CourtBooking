@@ -9,11 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CourtBooking.POS
+namespace CourtBooking.CourtBooking
 {
-    public partial class GetProducts : BaseInfoForm
+    public partial class ConfirmBookingInfo : BaseInfoForm
     {
-        public GetProducts()
+        public ConfirmBookingInfo()
         {
             InitializeComponent();
         }

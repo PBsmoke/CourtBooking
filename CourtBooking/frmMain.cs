@@ -27,13 +27,13 @@ namespace CourtBooking
         {
             switch (tabMain.SelectedPageIndex)  {
                 case 0 :
-                    tabManageCourt.SelectedIndex = 1;
+                    tabManageCourt.SelectedIndex = 2;
                     break;
                 case 1:
-                    tabManagePOS.SelectedIndex = 2;
+                    tabManagePOS.SelectedIndex = 4;
                     break;
                 case  2:
-                    tabManageUser.SelectedIndex = 1;
+                    tabManageSetup.SelectedIndex = 1;
                     break;
             }
                    

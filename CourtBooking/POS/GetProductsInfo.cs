@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace CourtBooking.POS
 {
-    public partial class SellInfo : BaseInfoForm
+    public partial class GetProductsInfo : BaseInfoForm
     {
-        public SellInfo()
+        public GetProductsInfo()
         {
             InitializeComponent();
         }

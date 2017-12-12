@@ -12,16 +12,16 @@ using Service.Baseform;
 
 namespace CourtBooking.CourtBooking
 {
-    public partial class PromotionList : BaseListOnTap
+    public partial class CustomerList : BaseListOnTap
     {
-        public PromotionList()
+        public CustomerList()
         {
             InitializeComponent();
         }
 
         protected override void DoNew()
         {
-            PromotionInfo frmForm = new PromotionInfo();
+            CustomerInfo frmForm = new CustomerInfo();
             frmForm.ShowDialog();
             btnStatus(true);
         }

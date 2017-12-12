@@ -1,6 +1,6 @@
 ﻿namespace CourtBooking.POS
 {
-    partial class GetProducts
+    partial class GetProductsInfo
     {
         /// <summary>
         /// Required designer variable.
@@ -99,7 +99,7 @@
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             // 
-            // GetProducts
+            // GetProductsInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -109,8 +109,9 @@
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.labelControl2);
-            this.Name = "GetProducts";
-            this.Text = "GetProducts";
+            this.Name = "GetProductsInfo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "รับสินค้า";
             this.Controls.SetChildIndex(this.labelControl2, 0);
             this.Controls.SetChildIndex(this.textBox2, 0);
             this.Controls.SetChildIndex(this.labelControl1, 0);

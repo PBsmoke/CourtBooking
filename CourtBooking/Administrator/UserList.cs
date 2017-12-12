@@ -10,18 +10,17 @@ using System.Windows.Forms;
 using Service;
 using Service.Baseform;
 
-namespace CourtBooking.CourtBooking
+namespace CourtBooking.Administrator
 {
-    public partial class PromotionList : BaseListOnTap
+    public partial class UserList : BaseListOnTap
     {
-        public PromotionList()
+        public UserList()
         {
             InitializeComponent();
         }
-
         protected override void DoNew()
         {
-            PromotionInfo frmForm = new PromotionInfo();
+            UserInfo frmForm = new UserInfo();
             frmForm.ShowDialog();
             btnStatus(true);
         }

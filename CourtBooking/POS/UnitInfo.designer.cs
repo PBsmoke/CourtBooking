@@ -1,6 +1,6 @@
 ﻿namespace CourtBooking.POS
 {
-    partial class Unit
+    partial class UnitInfo
     {
         /// <summary>
         /// Required designer variable.
@@ -38,6 +38,8 @@
             // 
             // labelControl1
             // 
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.labelControl1.Appearance.Options.UseForeColor = true;
             this.labelControl1.Location = new System.Drawing.Point(12, 57);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(58, 13);
@@ -54,6 +56,8 @@
             // 
             // labelControl2
             // 
+            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.labelControl2.Appearance.Options.UseForeColor = true;
             this.labelControl2.Location = new System.Drawing.Point(12, 83);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(53, 13);
@@ -67,7 +71,7 @@
             this.textBox2.Size = new System.Drawing.Size(352, 20);
             this.textBox2.TabIndex = 135;
             // 
-            // Unit
+            // UnitInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -76,8 +80,10 @@
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.labelControl1);
-            this.Name = "Unit";
-            this.Text = "Unit";
+            this.ForeColor = System.Drawing.Color.Maroon;
+            this.Name = "UnitInfo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "หน่วยนับ";
             this.Controls.SetChildIndex(this.labelControl1, 0);
             this.Controls.SetChildIndex(this.textBox1, 0);
             this.Controls.SetChildIndex(this.labelControl2, 0);

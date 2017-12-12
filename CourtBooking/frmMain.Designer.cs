@@ -29,13 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraScheduler.TimeRuler timeRuler4 = new DevExpress.XtraScheduler.TimeRuler();
-            DevExpress.XtraScheduler.TimeRuler timeRuler5 = new DevExpress.XtraScheduler.TimeRuler();
-            DevExpress.XtraScheduler.TimeRuler timeRuler6 = new DevExpress.XtraScheduler.TimeRuler();
+            DevExpress.XtraScheduler.TimeRuler timeRuler1 = new DevExpress.XtraScheduler.TimeRuler();
+            DevExpress.XtraScheduler.TimeRuler timeRuler2 = new DevExpress.XtraScheduler.TimeRuler();
+            DevExpress.XtraScheduler.TimeRuler timeRuler3 = new DevExpress.XtraScheduler.TimeRuler();
             this.tabMain = new DevExpress.XtraBars.Navigation.TabPane();
             this.tabCourtBooking = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.tabManageCourt = new System.Windows.Forms.TabControl();
             this.tabPrommotion = new System.Windows.Forms.TabPage();
+            this.promotionList = new CourtBooking.PromotionList();
             this.tabBooking = new System.Windows.Forms.TabPage();
             this.sidePanel2 = new DevExpress.XtraEditors.SidePanel();
             this.schedulerControl1 = new DevExpress.XtraScheduler.SchedulerControl();
@@ -43,22 +44,25 @@
             this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
             this.calendarControl1 = new DevExpress.XtraEditors.Controls.CalendarControl();
             this.tabMember = new System.Windows.Forms.TabPage();
-            this.baseListOnTap4 = new Service.Baseform.BaseListOnTap();
+            this.customerList1 = new CourtBooking.CustomerList();
+            this.tabConfirmBooking = new System.Windows.Forms.TabPage();
             this.tabPOS = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.tabManagePOS = new System.Windows.Forms.TabControl();
             this.tabUnit = new System.Windows.Forms.TabPage();
-            this.baseListOnTap1 = new Service.Baseform.BaseListOnTap();
+            this.unitList1 = new POS.UnitList();
+            this.tabProductType = new System.Windows.Forms.TabPage();
+            this.productTypeList1 = new POS.ProductTypeList();
+            this.tabGetProducts = new System.Windows.Forms.TabPage();
+            this.getProductsList1 = new POS.GetProductsList();
             this.tabStore = new System.Windows.Forms.TabPage();
-            this.ListStore = new Service.Baseform.BaseListOnTap();
+            this.productsList1 = new POS.ProductsList();
             this.tabSell = new System.Windows.Forms.TabPage();
-            this.baseListOnTap2 = new Service.Baseform.BaseListOnTap();
-            this.tabAdministrator = new DevExpress.XtraBars.Navigation.TabNavigationPage();
-            this.tabManageUser = new System.Windows.Forms.TabControl();
-            this.tabPermission = new System.Windows.Forms.TabPage();
-            this.baseListOnTap5 = new Service.Baseform.BaseListOnTap();
+            this.sellList1 = new POS.SellList();
+            this.tabSetup = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            this.tabManageSetup = new System.Windows.Forms.TabControl();
             this.tabUser = new System.Windows.Forms.TabPage();
-            this.baseListOnTap6 = new Service.Baseform.BaseListOnTap();
-            this.promotionList1 = new CourtBooking.PromotionList();
+            this.userList1 = new Administrator.UserList();
+            this.confirmBookingList1 = new CourtBooking.ConfirmBookingList();
             ((System.ComponentModel.ISupportInitialize)(this.tabMain)).BeginInit();
             this.tabMain.SuspendLayout();
             this.tabCourtBooking.SuspendLayout();
@@ -71,14 +75,16 @@
             this.sidePanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.calendarControl1.CalendarTimeProperties)).BeginInit();
             this.tabMember.SuspendLayout();
+            this.tabConfirmBooking.SuspendLayout();
             this.tabPOS.SuspendLayout();
             this.tabManagePOS.SuspendLayout();
             this.tabUnit.SuspendLayout();
+            this.tabProductType.SuspendLayout();
+            this.tabGetProducts.SuspendLayout();
             this.tabStore.SuspendLayout();
             this.tabSell.SuspendLayout();
-            this.tabAdministrator.SuspendLayout();
-            this.tabManageUser.SuspendLayout();
-            this.tabPermission.SuspendLayout();
+            this.tabSetup.SuspendLayout();
+            this.tabManageSetup.SuspendLayout();
             this.tabUser.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,7 +94,7 @@
             this.tabMain.Appearance.Options.UseFont = true;
             this.tabMain.Controls.Add(this.tabCourtBooking);
             this.tabMain.Controls.Add(this.tabPOS);
-            this.tabMain.Controls.Add(this.tabAdministrator);
+            this.tabMain.Controls.Add(this.tabSetup);
             this.tabMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabMain.Location = new System.Drawing.Point(0, 0);
@@ -97,7 +103,7 @@
             this.tabMain.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.tabCourtBooking,
             this.tabPOS,
-            this.tabAdministrator});
+            this.tabSetup});
             this.tabMain.RegularSize = new System.Drawing.Size(1009, 550);
             this.tabMain.SelectedPage = this.tabCourtBooking;
             this.tabMain.Size = new System.Drawing.Size(1009, 550);
@@ -118,8 +124,9 @@
             // tabManageCourt
             // 
             this.tabManageCourt.Controls.Add(this.tabPrommotion);
-            this.tabManageCourt.Controls.Add(this.tabBooking);
             this.tabManageCourt.Controls.Add(this.tabMember);
+            this.tabManageCourt.Controls.Add(this.tabBooking);
+            this.tabManageCourt.Controls.Add(this.tabConfirmBooking);
             this.tabManageCourt.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabManageCourt.Location = new System.Drawing.Point(0, 0);
             this.tabManageCourt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -130,7 +137,7 @@
             // 
             // tabPrommotion
             // 
-            this.tabPrommotion.Controls.Add(this.promotionList1);
+            this.tabPrommotion.Controls.Add(this.promotionList);
             this.tabPrommotion.Location = new System.Drawing.Point(4, 25);
             this.tabPrommotion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPrommotion.Name = "tabPrommotion";
@@ -139,6 +146,17 @@
             this.tabPrommotion.TabIndex = 0;
             this.tabPrommotion.Text = "กำหนด Promotion";
             this.tabPrommotion.UseVisualStyleBackColor = true;
+            // 
+            // promotionList
+            // 
+            this.promotionList.AutoSize = true;
+            this.promotionList.BtnAddText = "";
+            this.promotionList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.promotionList.Location = new System.Drawing.Point(4, 5);
+            this.promotionList.Margin = new System.Windows.Forms.Padding(4);
+            this.promotionList.Name = "promotionList";
+            this.promotionList.Size = new System.Drawing.Size(975, 466);
+            this.promotionList.TabIndex = 0;
             // 
             // tabBooking
             // 
@@ -173,11 +191,11 @@
             this.schedulerControl1.Start = new System.DateTime(2017, 12, 5, 0, 0, 0, 0);
             this.schedulerControl1.TabIndex = 1;
             this.schedulerControl1.Text = "schedulerControl1";
-            this.schedulerControl1.Views.DayView.TimeRulers.Add(timeRuler4);
+            this.schedulerControl1.Views.DayView.TimeRulers.Add(timeRuler1);
             this.schedulerControl1.Views.FullWeekView.Enabled = true;
-            this.schedulerControl1.Views.FullWeekView.TimeRulers.Add(timeRuler5);
+            this.schedulerControl1.Views.FullWeekView.TimeRulers.Add(timeRuler2);
             this.schedulerControl1.Views.WeekView.Enabled = false;
-            this.schedulerControl1.Views.WorkWeekView.TimeRulers.Add(timeRuler6);
+            this.schedulerControl1.Views.WorkWeekView.TimeRulers.Add(timeRuler3);
             // 
             // sidePanel1
             // 
@@ -201,7 +219,7 @@
             // 
             // tabMember
             // 
-            this.tabMember.Controls.Add(this.baseListOnTap4);
+            this.tabMember.Controls.Add(this.customerList1);
             this.tabMember.Location = new System.Drawing.Point(4, 25);
             this.tabMember.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabMember.Name = "tabMember";
@@ -211,16 +229,27 @@
             this.tabMember.Text = "ข้อมูลลูกค้า";
             this.tabMember.UseVisualStyleBackColor = true;
             // 
-            // baseListOnTap4
+            // customerList1
             // 
-            this.baseListOnTap4.AutoSize = true;
-            this.baseListOnTap4.BtnAddText = "";
-            this.baseListOnTap4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.baseListOnTap4.Location = new System.Drawing.Point(4, 5);
-            this.baseListOnTap4.Margin = new System.Windows.Forms.Padding(7);
-            this.baseListOnTap4.Name = "baseListOnTap4";
-            this.baseListOnTap4.Size = new System.Drawing.Size(975, 466);
-            this.baseListOnTap4.TabIndex = 3;
+            this.customerList1.AutoSize = true;
+            this.customerList1.BtnAddText = "";
+            this.customerList1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.customerList1.Location = new System.Drawing.Point(4, 5);
+            this.customerList1.Margin = new System.Windows.Forms.Padding(4);
+            this.customerList1.Name = "customerList1";
+            this.customerList1.Size = new System.Drawing.Size(975, 466);
+            this.customerList1.TabIndex = 0;
+            // 
+            // tabConfirmBooking
+            // 
+            this.tabConfirmBooking.Controls.Add(this.confirmBookingList1);
+            this.tabConfirmBooking.Location = new System.Drawing.Point(4, 25);
+            this.tabConfirmBooking.Name = "tabConfirmBooking";
+            this.tabConfirmBooking.Padding = new System.Windows.Forms.Padding(3);
+            this.tabConfirmBooking.Size = new System.Drawing.Size(983, 476);
+            this.tabConfirmBooking.TabIndex = 3;
+            this.tabConfirmBooking.Text = "ยืนยันการจองสนาม";
+            this.tabConfirmBooking.UseVisualStyleBackColor = true;
             // 
             // tabPOS
             // 
@@ -234,6 +263,8 @@
             // tabManagePOS
             // 
             this.tabManagePOS.Controls.Add(this.tabUnit);
+            this.tabManagePOS.Controls.Add(this.tabProductType);
+            this.tabManagePOS.Controls.Add(this.tabGetProducts);
             this.tabManagePOS.Controls.Add(this.tabStore);
             this.tabManagePOS.Controls.Add(this.tabSell);
             this.tabManagePOS.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -246,7 +277,7 @@
             // 
             // tabUnit
             // 
-            this.tabUnit.Controls.Add(this.baseListOnTap1);
+            this.tabUnit.Controls.Add(this.unitList1);
             this.tabUnit.Location = new System.Drawing.Point(4, 25);
             this.tabUnit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabUnit.Name = "tabUnit";
@@ -256,20 +287,64 @@
             this.tabUnit.Text = "หน่วยนับ";
             this.tabUnit.UseVisualStyleBackColor = true;
             // 
-            // baseListOnTap1
+            // unitList1
             // 
-            this.baseListOnTap1.AutoSize = true;
-            this.baseListOnTap1.BtnAddText = "";
-            this.baseListOnTap1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.baseListOnTap1.Location = new System.Drawing.Point(4, 5);
-            this.baseListOnTap1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.baseListOnTap1.Name = "baseListOnTap1";
-            this.baseListOnTap1.Size = new System.Drawing.Size(975, 466);
-            this.baseListOnTap1.TabIndex = 2;
+            this.unitList1.AutoSize = true;
+            this.unitList1.BtnAddText = "";
+            this.unitList1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.unitList1.Location = new System.Drawing.Point(4, 5);
+            this.unitList1.Margin = new System.Windows.Forms.Padding(4);
+            this.unitList1.Name = "unitList1";
+            this.unitList1.Size = new System.Drawing.Size(975, 466);
+            this.unitList1.TabIndex = 0;
+            // 
+            // tabProductType
+            // 
+            this.tabProductType.Controls.Add(this.productTypeList1);
+            this.tabProductType.Location = new System.Drawing.Point(4, 25);
+            this.tabProductType.Name = "tabProductType";
+            this.tabProductType.Padding = new System.Windows.Forms.Padding(3);
+            this.tabProductType.Size = new System.Drawing.Size(983, 476);
+            this.tabProductType.TabIndex = 3;
+            this.tabProductType.Text = "ประเภทสินค้า";
+            this.tabProductType.UseVisualStyleBackColor = true;
+            // 
+            // productTypeList1
+            // 
+            this.productTypeList1.AutoSize = true;
+            this.productTypeList1.BtnAddText = "";
+            this.productTypeList1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.productTypeList1.Location = new System.Drawing.Point(3, 3);
+            this.productTypeList1.Margin = new System.Windows.Forms.Padding(4);
+            this.productTypeList1.Name = "productTypeList1";
+            this.productTypeList1.Size = new System.Drawing.Size(977, 470);
+            this.productTypeList1.TabIndex = 0;
+            // 
+            // tabGetProducts
+            // 
+            this.tabGetProducts.Controls.Add(this.getProductsList1);
+            this.tabGetProducts.Location = new System.Drawing.Point(4, 25);
+            this.tabGetProducts.Name = "tabGetProducts";
+            this.tabGetProducts.Padding = new System.Windows.Forms.Padding(3);
+            this.tabGetProducts.Size = new System.Drawing.Size(983, 476);
+            this.tabGetProducts.TabIndex = 4;
+            this.tabGetProducts.Text = "รับสินค้า";
+            this.tabGetProducts.UseVisualStyleBackColor = true;
+            // 
+            // getProductsList1
+            // 
+            this.getProductsList1.AutoSize = true;
+            this.getProductsList1.BtnAddText = "";
+            this.getProductsList1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.getProductsList1.Location = new System.Drawing.Point(3, 3);
+            this.getProductsList1.Margin = new System.Windows.Forms.Padding(4);
+            this.getProductsList1.Name = "getProductsList1";
+            this.getProductsList1.Size = new System.Drawing.Size(977, 470);
+            this.getProductsList1.TabIndex = 0;
             // 
             // tabStore
             // 
-            this.tabStore.Controls.Add(this.ListStore);
+            this.tabStore.Controls.Add(this.productsList1);
             this.tabStore.Location = new System.Drawing.Point(4, 25);
             this.tabStore.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabStore.Name = "tabStore";
@@ -279,20 +354,20 @@
             this.tabStore.Text = "สินค้า";
             this.tabStore.UseVisualStyleBackColor = true;
             // 
-            // ListStore
+            // productsList1
             // 
-            this.ListStore.AutoSize = true;
-            this.ListStore.BtnAddText = "";
-            this.ListStore.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ListStore.Location = new System.Drawing.Point(4, 5);
-            this.ListStore.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ListStore.Name = "ListStore";
-            this.ListStore.Size = new System.Drawing.Size(975, 466);
-            this.ListStore.TabIndex = 1;
+            this.productsList1.AutoSize = true;
+            this.productsList1.BtnAddText = "";
+            this.productsList1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.productsList1.Location = new System.Drawing.Point(4, 5);
+            this.productsList1.Margin = new System.Windows.Forms.Padding(4);
+            this.productsList1.Name = "productsList1";
+            this.productsList1.Size = new System.Drawing.Size(975, 466);
+            this.productsList1.TabIndex = 0;
             // 
             // tabSell
             // 
-            this.tabSell.Controls.Add(this.baseListOnTap2);
+            this.tabSell.Controls.Add(this.sellList1);
             this.tabSell.Location = new System.Drawing.Point(4, 25);
             this.tabSell.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabSell.Name = "tabSell";
@@ -302,64 +377,40 @@
             this.tabSell.Text = "การขาย";
             this.tabSell.UseVisualStyleBackColor = true;
             // 
-            // baseListOnTap2
+            // sellList1
             // 
-            this.baseListOnTap2.AutoSize = true;
-            this.baseListOnTap2.BtnAddText = "";
-            this.baseListOnTap2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.baseListOnTap2.Location = new System.Drawing.Point(4, 5);
-            this.baseListOnTap2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.baseListOnTap2.Name = "baseListOnTap2";
-            this.baseListOnTap2.Size = new System.Drawing.Size(975, 466);
-            this.baseListOnTap2.TabIndex = 2;
+            this.sellList1.AutoSize = true;
+            this.sellList1.BtnAddText = "";
+            this.sellList1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sellList1.Location = new System.Drawing.Point(4, 5);
+            this.sellList1.Margin = new System.Windows.Forms.Padding(4);
+            this.sellList1.Name = "sellList1";
+            this.sellList1.Size = new System.Drawing.Size(975, 466);
+            this.sellList1.TabIndex = 0;
             // 
-            // tabAdministrator
+            // tabSetup
             // 
-            this.tabAdministrator.Caption = "Administrator";
-            this.tabAdministrator.Controls.Add(this.tabManageUser);
-            this.tabAdministrator.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabAdministrator.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabAdministrator.Name = "tabAdministrator";
-            this.tabAdministrator.Size = new System.Drawing.Size(991, 505);
+            this.tabSetup.Caption = "Setup";
+            this.tabSetup.Controls.Add(this.tabManageSetup);
+            this.tabSetup.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabSetup.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabSetup.Name = "tabSetup";
+            this.tabSetup.Size = new System.Drawing.Size(991, 505);
             // 
-            // tabManageUser
+            // tabManageSetup
             // 
-            this.tabManageUser.Controls.Add(this.tabPermission);
-            this.tabManageUser.Controls.Add(this.tabUser);
-            this.tabManageUser.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabManageUser.Location = new System.Drawing.Point(0, 0);
-            this.tabManageUser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabManageUser.Name = "tabManageUser";
-            this.tabManageUser.SelectedIndex = 0;
-            this.tabManageUser.Size = new System.Drawing.Size(991, 505);
-            this.tabManageUser.TabIndex = 0;
-            // 
-            // tabPermission
-            // 
-            this.tabPermission.Controls.Add(this.baseListOnTap5);
-            this.tabPermission.Location = new System.Drawing.Point(4, 25);
-            this.tabPermission.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabPermission.Name = "tabPermission";
-            this.tabPermission.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabPermission.Size = new System.Drawing.Size(983, 476);
-            this.tabPermission.TabIndex = 0;
-            this.tabPermission.Text = "Premission";
-            this.tabPermission.UseVisualStyleBackColor = true;
-            // 
-            // baseListOnTap5
-            // 
-            this.baseListOnTap5.AutoSize = true;
-            this.baseListOnTap5.BtnAddText = "";
-            this.baseListOnTap5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.baseListOnTap5.Location = new System.Drawing.Point(4, 5);
-            this.baseListOnTap5.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.baseListOnTap5.Name = "baseListOnTap5";
-            this.baseListOnTap5.Size = new System.Drawing.Size(975, 466);
-            this.baseListOnTap5.TabIndex = 2;
+            this.tabManageSetup.Controls.Add(this.tabUser);
+            this.tabManageSetup.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabManageSetup.Location = new System.Drawing.Point(0, 0);
+            this.tabManageSetup.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabManageSetup.Name = "tabManageSetup";
+            this.tabManageSetup.SelectedIndex = 0;
+            this.tabManageSetup.Size = new System.Drawing.Size(991, 505);
+            this.tabManageSetup.TabIndex = 0;
             // 
             // tabUser
             // 
-            this.tabUser.Controls.Add(this.baseListOnTap6);
+            this.tabUser.Controls.Add(this.userList1);
             this.tabUser.Location = new System.Drawing.Point(4, 25);
             this.tabUser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabUser.Name = "tabUser";
@@ -369,27 +420,27 @@
             this.tabUser.Text = "User";
             this.tabUser.UseVisualStyleBackColor = true;
             // 
-            // baseListOnTap6
+            // userList1
             // 
-            this.baseListOnTap6.AutoSize = true;
-            this.baseListOnTap6.BtnAddText = "";
-            this.baseListOnTap6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.baseListOnTap6.Location = new System.Drawing.Point(4, 5);
-            this.baseListOnTap6.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.baseListOnTap6.Name = "baseListOnTap6";
-            this.baseListOnTap6.Size = new System.Drawing.Size(975, 466);
-            this.baseListOnTap6.TabIndex = 2;
+            this.userList1.AutoSize = true;
+            this.userList1.BtnAddText = "";
+            this.userList1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userList1.Location = new System.Drawing.Point(4, 5);
+            this.userList1.Margin = new System.Windows.Forms.Padding(4);
+            this.userList1.Name = "userList1";
+            this.userList1.Size = new System.Drawing.Size(975, 466);
+            this.userList1.TabIndex = 0;
             // 
-            // promotionList1
+            // confirmBookingList1
             // 
-            this.promotionList1.AutoSize = true;
-            this.promotionList1.BtnAddText = "";
-            this.promotionList1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.promotionList1.Location = new System.Drawing.Point(4, 5);
-            this.promotionList1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.promotionList1.Name = "promotionList1";
-            this.promotionList1.Size = new System.Drawing.Size(975, 466);
-            this.promotionList1.TabIndex = 0;
+            this.confirmBookingList1.AutoSize = true;
+            this.confirmBookingList1.BtnAddText = "";
+            this.confirmBookingList1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.confirmBookingList1.Location = new System.Drawing.Point(3, 3);
+            this.confirmBookingList1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.confirmBookingList1.Name = "confirmBookingList1";
+            this.confirmBookingList1.Size = new System.Drawing.Size(977, 470);
+            this.confirmBookingList1.TabIndex = 0;
             // 
             // frmMain
             // 
@@ -419,18 +470,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.calendarControl1.CalendarTimeProperties)).EndInit();
             this.tabMember.ResumeLayout(false);
             this.tabMember.PerformLayout();
+            this.tabConfirmBooking.ResumeLayout(false);
+            this.tabConfirmBooking.PerformLayout();
             this.tabPOS.ResumeLayout(false);
             this.tabManagePOS.ResumeLayout(false);
             this.tabUnit.ResumeLayout(false);
             this.tabUnit.PerformLayout();
+            this.tabProductType.ResumeLayout(false);
+            this.tabProductType.PerformLayout();
+            this.tabGetProducts.ResumeLayout(false);
+            this.tabGetProducts.PerformLayout();
             this.tabStore.ResumeLayout(false);
             this.tabStore.PerformLayout();
             this.tabSell.ResumeLayout(false);
             this.tabSell.PerformLayout();
-            this.tabAdministrator.ResumeLayout(false);
-            this.tabManageUser.ResumeLayout(false);
-            this.tabPermission.ResumeLayout(false);
-            this.tabPermission.PerformLayout();
+            this.tabSetup.ResumeLayout(false);
+            this.tabManageSetup.ResumeLayout(false);
             this.tabUser.ResumeLayout(false);
             this.tabUser.PerformLayout();
             this.ResumeLayout(false);
@@ -442,7 +497,7 @@
         private DevExpress.XtraBars.Navigation.TabPane tabMain;
         private DevExpress.XtraBars.Navigation.TabNavigationPage tabCourtBooking;
         private DevExpress.XtraBars.Navigation.TabNavigationPage tabPOS;
-        private DevExpress.XtraBars.Navigation.TabNavigationPage tabAdministrator;
+        private DevExpress.XtraBars.Navigation.TabNavigationPage tabSetup;
         private System.Windows.Forms.TabControl tabManageCourt;
         private System.Windows.Forms.TabPage tabPrommotion;
         private System.Windows.Forms.TabPage tabBooking;
@@ -450,22 +505,26 @@
         private System.Windows.Forms.TabControl tabManagePOS;
         private System.Windows.Forms.TabPage tabUnit;
         private System.Windows.Forms.TabPage tabStore;
-        private System.Windows.Forms.TabControl tabManageUser;
-        private System.Windows.Forms.TabPage tabPermission;
+        private System.Windows.Forms.TabControl tabManageSetup;
         private System.Windows.Forms.TabPage tabUser;
         private System.Windows.Forms.TabPage tabSell;
-        private Service.Baseform.BaseListOnTap ListStore;
-        private Service.Baseform.BaseListOnTap baseListOnTap1;
-        private Service.Baseform.BaseListOnTap baseListOnTap2;
-        private Service.Baseform.BaseListOnTap baseListOnTap5;
-        private Service.Baseform.BaseListOnTap baseListOnTap6;
         private DevExpress.XtraEditors.Controls.CalendarControl calendarControl1;
         private DevExpress.XtraScheduler.SchedulerControl schedulerControl1;
         private DevExpress.XtraScheduler.SchedulerStorage schedulerStorage1;
         private DevExpress.XtraEditors.SidePanel sidePanel2;
         private DevExpress.XtraEditors.SidePanel sidePanel1;
-        private Service.Baseform.BaseListOnTap baseListOnTap4;
-        private CourtBooking.PromotionList promotionList1;
+        private CourtBooking.PromotionList promotionList;
+        private CourtBooking.CustomerList customerList1;
+        private POS.UnitList unitList1;
+        private POS.ProductsList productsList1;
+        private POS.SellList sellList1;
+        private Administrator.UserList userList1;
+        private System.Windows.Forms.TabPage tabProductType;
+        private POS.ProductTypeList productTypeList1;
+        private System.Windows.Forms.TabPage tabGetProducts;
+        private POS.GetProductsList getProductsList1;
+        private System.Windows.Forms.TabPage tabConfirmBooking;
+        private CourtBooking.ConfirmBookingList confirmBookingList1;
     }
 }
 
