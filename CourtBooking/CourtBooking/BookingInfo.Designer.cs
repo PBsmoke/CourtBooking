@@ -31,32 +31,32 @@
             this.textBox1 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.buttonEdit6 = new DevExpress.XtraEditors.ButtonEdit();
+            this.buttonEdit5 = new DevExpress.XtraEditors.ButtonEdit();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.buttonEdit4 = new DevExpress.XtraEditors.ButtonEdit();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
+            this.buttonEdit3 = new DevExpress.XtraEditors.ButtonEdit();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.buttonEdit1 = new DevExpress.XtraEditors.ButtonEdit();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
             this.buttonEdit2 = new DevExpress.XtraEditors.ButtonEdit();
-            this.buttonEdit3 = new DevExpress.XtraEditors.ButtonEdit();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.buttonEdit4 = new DevExpress.XtraEditors.ButtonEdit();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.buttonEdit5 = new DevExpress.XtraEditors.ButtonEdit();
-            this.buttonEdit6 = new DevExpress.XtraEditors.ButtonEdit();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.textBox1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonEdit6.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonEdit5.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonEdit4.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.buttonEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.buttonEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.buttonEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.buttonEdit6.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
@@ -94,6 +94,90 @@
             this.groupControl1.Size = new System.Drawing.Size(597, 106);
             this.groupControl1.TabIndex = 133;
             this.groupControl1.Text = "รายละเอียการจองสนาม";
+            // 
+            // buttonEdit6
+            // 
+            this.buttonEdit6.Location = new System.Drawing.Point(116, 23);
+            this.buttonEdit6.Name = "buttonEdit6";
+            this.buttonEdit6.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.buttonEdit6.Size = new System.Drawing.Size(168, 20);
+            this.buttonEdit6.TabIndex = 161;
+            // 
+            // buttonEdit5
+            // 
+            this.buttonEdit5.Location = new System.Drawing.Point(424, 23);
+            this.buttonEdit5.Name = "buttonEdit5";
+            this.buttonEdit5.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.buttonEdit5.Size = new System.Drawing.Size(168, 20);
+            this.buttonEdit5.TabIndex = 160;
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Location = new System.Drawing.Point(424, 75);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(168, 23);
+            this.simpleButton1.TabIndex = 159;
+            this.simpleButton1.Text = "แสดงข้อมูล";
+            // 
+            // buttonEdit4
+            // 
+            this.buttonEdit4.Location = new System.Drawing.Point(424, 49);
+            this.buttonEdit4.Name = "buttonEdit4";
+            this.buttonEdit4.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.buttonEdit4.Size = new System.Drawing.Size(168, 20);
+            this.buttonEdit4.TabIndex = 158;
+            // 
+            // labelControl5
+            // 
+            this.labelControl5.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.labelControl5.Appearance.Options.UseForeColor = true;
+            this.labelControl5.Location = new System.Drawing.Point(313, 52);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(11, 13);
+            this.labelControl5.TabIndex = 157;
+            this.labelControl5.Text = "ถึง";
+            // 
+            // labelControl7
+            // 
+            this.labelControl7.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.labelControl7.Appearance.Options.UseForeColor = true;
+            this.labelControl7.Location = new System.Drawing.Point(5, 52);
+            this.labelControl7.Name = "labelControl7";
+            this.labelControl7.Size = new System.Drawing.Size(103, 13);
+            this.labelControl7.TabIndex = 155;
+            this.labelControl7.Text = "เวลาที่ต้องการใช้สนาม";
+            // 
+            // buttonEdit3
+            // 
+            this.buttonEdit3.Location = new System.Drawing.Point(116, 49);
+            this.buttonEdit3.Name = "buttonEdit3";
+            this.buttonEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.buttonEdit3.Size = new System.Drawing.Size(168, 20);
+            this.buttonEdit3.TabIndex = 154;
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.labelControl3.Appearance.Options.UseForeColor = true;
+            this.labelControl3.Location = new System.Drawing.Point(313, 26);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(11, 13);
+            this.labelControl3.TabIndex = 153;
+            this.labelControl3.Text = "ถึง";
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.labelControl4.Appearance.Options.UseForeColor = true;
+            this.labelControl4.Location = new System.Drawing.Point(5, 26);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(94, 13);
+            this.labelControl4.TabIndex = 151;
+            this.labelControl4.Text = "วันที่ต้องการใช้สนาม";
             // 
             // buttonEdit1
             // 
@@ -140,90 +224,6 @@
             this.buttonEdit2.Size = new System.Drawing.Size(173, 20);
             this.buttonEdit2.TabIndex = 150;
             // 
-            // buttonEdit3
-            // 
-            this.buttonEdit3.Location = new System.Drawing.Point(116, 49);
-            this.buttonEdit3.Name = "buttonEdit3";
-            this.buttonEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.buttonEdit3.Size = new System.Drawing.Size(168, 20);
-            this.buttonEdit3.TabIndex = 154;
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl3.Appearance.Options.UseForeColor = true;
-            this.labelControl3.Location = new System.Drawing.Point(313, 26);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(11, 13);
-            this.labelControl3.TabIndex = 153;
-            this.labelControl3.Text = "ถึง";
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl4.Appearance.Options.UseForeColor = true;
-            this.labelControl4.Location = new System.Drawing.Point(5, 26);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(94, 13);
-            this.labelControl4.TabIndex = 151;
-            this.labelControl4.Text = "วันที่ต้องการใช้สนาม";
-            // 
-            // buttonEdit4
-            // 
-            this.buttonEdit4.Location = new System.Drawing.Point(424, 49);
-            this.buttonEdit4.Name = "buttonEdit4";
-            this.buttonEdit4.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.buttonEdit4.Size = new System.Drawing.Size(168, 20);
-            this.buttonEdit4.TabIndex = 158;
-            // 
-            // labelControl5
-            // 
-            this.labelControl5.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl5.Appearance.Options.UseForeColor = true;
-            this.labelControl5.Location = new System.Drawing.Point(313, 52);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(11, 13);
-            this.labelControl5.TabIndex = 157;
-            this.labelControl5.Text = "ถึง";
-            // 
-            // labelControl7
-            // 
-            this.labelControl7.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.labelControl7.Appearance.Options.UseForeColor = true;
-            this.labelControl7.Location = new System.Drawing.Point(5, 52);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(103, 13);
-            this.labelControl7.TabIndex = 155;
-            this.labelControl7.Text = "เวลาที่ต้องการใช้สนาม";
-            // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Location = new System.Drawing.Point(424, 75);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(168, 23);
-            this.simpleButton1.TabIndex = 159;
-            this.simpleButton1.Text = "แสดงข้อมูล";
-            // 
-            // buttonEdit5
-            // 
-            this.buttonEdit5.Location = new System.Drawing.Point(424, 23);
-            this.buttonEdit5.Name = "buttonEdit5";
-            this.buttonEdit5.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.buttonEdit5.Size = new System.Drawing.Size(168, 20);
-            this.buttonEdit5.TabIndex = 160;
-            // 
-            // buttonEdit6
-            // 
-            this.buttonEdit6.Location = new System.Drawing.Point(116, 23);
-            this.buttonEdit6.Name = "buttonEdit6";
-            this.buttonEdit6.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.buttonEdit6.Size = new System.Drawing.Size(168, 20);
-            this.buttonEdit6.TabIndex = 161;
-            // 
             // gridControl1
             // 
             this.gridControl1.Location = new System.Drawing.Point(12, 216);
@@ -254,6 +254,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.labelControl1);
             this.Name = "BookingInfo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "จองสนาม";
             this.Controls.SetChildIndex(this.labelControl1, 0);
             this.Controls.SetChildIndex(this.textBox1, 0);
@@ -268,13 +269,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonEdit6.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonEdit5.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonEdit4.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.buttonEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.buttonEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.buttonEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.buttonEdit6.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);

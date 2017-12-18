@@ -42,9 +42,13 @@
             this.checkEdit5 = new DevExpress.XtraEditors.CheckEdit();
             this.checkEdit6 = new DevExpress.XtraEditors.CheckEdit();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.checkEdit7 = new DevExpress.XtraEditors.CheckEdit();
             this.checkEdit3 = new DevExpress.XtraEditors.CheckEdit();
             this.checkEdit2 = new DevExpress.XtraEditors.CheckEdit();
             this.checkEdit1 = new DevExpress.XtraEditors.CheckEdit();
+            this.checkEdit9 = new DevExpress.XtraEditors.CheckEdit();
+            this.checkEdit10 = new DevExpress.XtraEditors.CheckEdit();
+            this.checkEdit11 = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox3.Properties)).BeginInit();
@@ -57,9 +61,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit5.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit6.Properties)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit7.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit9.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit10.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit11.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -144,19 +152,21 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.checkEdit11);
+            this.groupBox2.Controls.Add(this.checkEdit10);
             this.groupBox2.Controls.Add(this.checkEdit4);
             this.groupBox2.Controls.Add(this.checkEdit5);
             this.groupBox2.Controls.Add(this.checkEdit6);
             this.groupBox2.Location = new System.Drawing.Point(189, 30);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(169, 107);
+            this.groupBox2.Size = new System.Drawing.Size(169, 152);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "POS";
             // 
             // checkEdit4
             // 
-            this.checkEdit4.Location = new System.Drawing.Point(6, 70);
+            this.checkEdit4.Location = new System.Drawing.Point(6, 120);
             this.checkEdit4.Name = "checkEdit4";
             this.checkEdit4.Properties.Caption = "การขาย";
             this.checkEdit4.Size = new System.Drawing.Size(119, 19);
@@ -164,7 +174,7 @@
             // 
             // checkEdit5
             // 
-            this.checkEdit5.Location = new System.Drawing.Point(6, 45);
+            this.checkEdit5.Location = new System.Drawing.Point(6, 70);
             this.checkEdit5.Name = "checkEdit5";
             this.checkEdit5.Properties.Caption = "สินค้า";
             this.checkEdit5.Size = new System.Drawing.Size(119, 19);
@@ -180,15 +190,25 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.checkEdit9);
+            this.groupBox1.Controls.Add(this.checkEdit7);
             this.groupBox1.Controls.Add(this.checkEdit3);
             this.groupBox1.Controls.Add(this.checkEdit2);
             this.groupBox1.Controls.Add(this.checkEdit1);
             this.groupBox1.Location = new System.Drawing.Point(14, 30);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(169, 107);
+            this.groupBox1.Size = new System.Drawing.Size(169, 152);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Court  Booking";
+            // 
+            // checkEdit7
+            // 
+            this.checkEdit7.Location = new System.Drawing.Point(6, 20);
+            this.checkEdit7.Name = "checkEdit7";
+            this.checkEdit7.Properties.Caption = "กำหนดค่าเช่าสนาม";
+            this.checkEdit7.Size = new System.Drawing.Size(119, 19);
+            this.checkEdit7.TabIndex = 3;
             // 
             // checkEdit3
             // 
@@ -200,7 +220,7 @@
             // 
             // checkEdit2
             // 
-            this.checkEdit2.Location = new System.Drawing.Point(6, 45);
+            this.checkEdit2.Location = new System.Drawing.Point(6, 95);
             this.checkEdit2.Name = "checkEdit2";
             this.checkEdit2.Properties.Caption = "ข้อมูลการจองสนาม";
             this.checkEdit2.Size = new System.Drawing.Size(119, 19);
@@ -208,11 +228,35 @@
             // 
             // checkEdit1
             // 
-            this.checkEdit1.Location = new System.Drawing.Point(6, 20);
+            this.checkEdit1.Location = new System.Drawing.Point(6, 45);
             this.checkEdit1.Name = "checkEdit1";
-            this.checkEdit1.Properties.Caption = "ข้อมูล Promotion";
+            this.checkEdit1.Properties.Caption = "กำหนด Promotion";
             this.checkEdit1.Size = new System.Drawing.Size(119, 19);
             this.checkEdit1.TabIndex = 0;
+            // 
+            // checkEdit9
+            // 
+            this.checkEdit9.Location = new System.Drawing.Point(6, 120);
+            this.checkEdit9.Name = "checkEdit9";
+            this.checkEdit9.Properties.Caption = "ยืนยันการจองสนาม";
+            this.checkEdit9.Size = new System.Drawing.Size(119, 19);
+            this.checkEdit9.TabIndex = 4;
+            // 
+            // checkEdit10
+            // 
+            this.checkEdit10.Location = new System.Drawing.Point(6, 45);
+            this.checkEdit10.Name = "checkEdit10";
+            this.checkEdit10.Properties.Caption = "ประเภทสินค้า";
+            this.checkEdit10.Size = new System.Drawing.Size(119, 19);
+            this.checkEdit10.TabIndex = 3;
+            // 
+            // checkEdit11
+            // 
+            this.checkEdit11.Location = new System.Drawing.Point(6, 95);
+            this.checkEdit11.Name = "checkEdit11";
+            this.checkEdit11.Properties.Caption = "รับสินค้า";
+            this.checkEdit11.Size = new System.Drawing.Size(119, 19);
+            this.checkEdit11.TabIndex = 4;
             // 
             // UserInfo
             // 
@@ -248,9 +292,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit5.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit6.Properties)).EndInit();
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit7.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit9.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit10.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit11.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -275,5 +323,9 @@
         private DevExpress.XtraEditors.CheckEdit checkEdit3;
         private DevExpress.XtraEditors.CheckEdit checkEdit2;
         private DevExpress.XtraEditors.CheckEdit checkEdit1;
+        private DevExpress.XtraEditors.CheckEdit checkEdit7;
+        private DevExpress.XtraEditors.CheckEdit checkEdit9;
+        private DevExpress.XtraEditors.CheckEdit checkEdit10;
+        private DevExpress.XtraEditors.CheckEdit checkEdit11;
     }
 }

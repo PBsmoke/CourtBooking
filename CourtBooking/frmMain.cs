@@ -28,7 +28,7 @@ namespace CourtBooking
         {
             switch (tabMain.SelectedPageIndex)  {
                 case 0 :
-                    tabManageCourt.SelectedIndex = 2;
+                    tabManageCourt.SelectedIndex = 4;
                     break;
                 case 1:
                     tabManagePOS.SelectedIndex = 4;

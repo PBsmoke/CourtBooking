@@ -260,7 +260,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(621, 522);
+            this.ClientSize = new System.Drawing.Size(621, 303);
             this.Controls.Add(this.labelControl4);
             this.Controls.Add(this.groupControl4);
             this.Controls.Add(this.groupControl3);

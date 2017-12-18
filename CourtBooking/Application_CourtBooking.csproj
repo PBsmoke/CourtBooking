@@ -101,6 +101,18 @@
     <Compile Include="CourtBooking\CustomerList.Designer.cs">
       <DependentUpon>CustomerList.cs</DependentUpon>
     </Compile>
+    <Compile Include="CourtBooking\DefinePriceInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CourtBooking\DefinePriceInfo.Designer.cs">
+      <DependentUpon>DefinePriceInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CourtBooking\DefinePriceList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CourtBooking\DefinePriceList.Designer.cs">
+      <DependentUpon>DefinePriceList.cs</DependentUpon>
+    </Compile>
     <Compile Include="CourtBooking\PromotionList.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -192,6 +204,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CourtBooking\CustomerInfo.resx">
       <DependentUpon>CustomerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CourtBooking\DefinePriceInfo.resx">
+      <DependentUpon>DefinePriceInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CourtBooking\PromotionInfo.resx">
       <DependentUpon>PromotionInfo.cs</DependentUpon>

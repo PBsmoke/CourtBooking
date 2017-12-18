@@ -29,12 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraScheduler.TimeRuler timeRuler4 = new DevExpress.XtraScheduler.TimeRuler();
-            DevExpress.XtraScheduler.TimeRuler timeRuler5 = new DevExpress.XtraScheduler.TimeRuler();
-            DevExpress.XtraScheduler.TimeRuler timeRuler6 = new DevExpress.XtraScheduler.TimeRuler();
+            DevExpress.XtraScheduler.TimeRuler timeRuler1 = new DevExpress.XtraScheduler.TimeRuler();
+            DevExpress.XtraScheduler.TimeRuler timeRuler2 = new DevExpress.XtraScheduler.TimeRuler();
+            DevExpress.XtraScheduler.TimeRuler timeRuler3 = new DevExpress.XtraScheduler.TimeRuler();
             this.tabMain = new DevExpress.XtraBars.Navigation.TabPane();
             this.tabCourtBooking = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.tabManageCourt = new System.Windows.Forms.TabControl();
+            this.tabDefinePrice = new System.Windows.Forms.TabPage();
+            this.definePriceList1 = new CourtBooking.DefinePriceList();
             this.tabPrommotion = new System.Windows.Forms.TabPage();
             this.promotionList = new CourtBooking.PromotionList();
             this.tabMember = new System.Windows.Forms.TabPage();
@@ -44,6 +46,8 @@
             this.schedulerControl1 = new DevExpress.XtraScheduler.SchedulerControl();
             this.schedulerStorage1 = new DevExpress.XtraScheduler.SchedulerStorage(this.components);
             this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
+            this.btnConfirmBooking = new DevExpress.XtraEditors.SimpleButton();
+            this.btnBooking = new DevExpress.XtraEditors.SimpleButton();
             this.calendarControl1 = new DevExpress.XtraEditors.Controls.CalendarControl();
             this.tabConfirmBooking = new System.Windows.Forms.TabPage();
             this.confirmBookingList1 = new CourtBooking.ConfirmBookingList();
@@ -63,12 +67,11 @@
             this.tabManageSetup = new System.Windows.Forms.TabControl();
             this.tabUser = new System.Windows.Forms.TabPage();
             this.userList1 = new Administrator.UserList();
-            this.btnBooking = new DevExpress.XtraEditors.SimpleButton();
-            this.btnConfirmBooking = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.tabMain)).BeginInit();
             this.tabMain.SuspendLayout();
             this.tabCourtBooking.SuspendLayout();
             this.tabManageCourt.SuspendLayout();
+            this.tabDefinePrice.SuspendLayout();
             this.tabPrommotion.SuspendLayout();
             this.tabMember.SuspendLayout();
             this.tabBooking.SuspendLayout();
@@ -125,6 +128,7 @@
             // 
             // tabManageCourt
             // 
+            this.tabManageCourt.Controls.Add(this.tabDefinePrice);
             this.tabManageCourt.Controls.Add(this.tabPrommotion);
             this.tabManageCourt.Controls.Add(this.tabMember);
             this.tabManageCourt.Controls.Add(this.tabBooking);
@@ -136,6 +140,28 @@
             this.tabManageCourt.SelectedIndex = 0;
             this.tabManageCourt.Size = new System.Drawing.Size(991, 505);
             this.tabManageCourt.TabIndex = 0;
+            // 
+            // tabDefinePrice
+            // 
+            this.tabDefinePrice.Controls.Add(this.definePriceList1);
+            this.tabDefinePrice.Location = new System.Drawing.Point(4, 25);
+            this.tabDefinePrice.Name = "tabDefinePrice";
+            this.tabDefinePrice.Padding = new System.Windows.Forms.Padding(3);
+            this.tabDefinePrice.Size = new System.Drawing.Size(983, 476);
+            this.tabDefinePrice.TabIndex = 4;
+            this.tabDefinePrice.Text = "กำหนดค่าเช่าสนาม";
+            this.tabDefinePrice.UseVisualStyleBackColor = true;
+            // 
+            // definePriceList1
+            // 
+            this.definePriceList1.AutoSize = true;
+            this.definePriceList1.BtnAddText = "";
+            this.definePriceList1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.definePriceList1.Location = new System.Drawing.Point(3, 3);
+            this.definePriceList1.Margin = new System.Windows.Forms.Padding(4);
+            this.definePriceList1.Name = "definePriceList1";
+            this.definePriceList1.Size = new System.Drawing.Size(977, 470);
+            this.definePriceList1.TabIndex = 0;
             // 
             // tabPrommotion
             // 
@@ -216,11 +242,11 @@
             this.schedulerControl1.Start = new System.DateTime(2017, 12, 5, 0, 0, 0, 0);
             this.schedulerControl1.TabIndex = 1;
             this.schedulerControl1.Text = "schedulerControl1";
-            this.schedulerControl1.Views.DayView.TimeRulers.Add(timeRuler4);
+            this.schedulerControl1.Views.DayView.TimeRulers.Add(timeRuler1);
             this.schedulerControl1.Views.FullWeekView.Enabled = true;
-            this.schedulerControl1.Views.FullWeekView.TimeRulers.Add(timeRuler5);
+            this.schedulerControl1.Views.FullWeekView.TimeRulers.Add(timeRuler2);
             this.schedulerControl1.Views.WeekView.Enabled = false;
-            this.schedulerControl1.Views.WorkWeekView.TimeRulers.Add(timeRuler6);
+            this.schedulerControl1.Views.WorkWeekView.TimeRulers.Add(timeRuler3);
             // 
             // sidePanel1
             // 
@@ -233,6 +259,24 @@
             this.sidePanel1.Size = new System.Drawing.Size(255, 466);
             this.sidePanel1.TabIndex = 2;
             this.sidePanel1.Text = "sidePanel1";
+            // 
+            // btnConfirmBooking
+            // 
+            this.btnConfirmBooking.Location = new System.Drawing.Point(-1, 262);
+            this.btnConfirmBooking.Name = "btnConfirmBooking";
+            this.btnConfirmBooking.Size = new System.Drawing.Size(256, 23);
+            this.btnConfirmBooking.TabIndex = 2;
+            this.btnConfirmBooking.Text = "ยืนยันการจองสนาม";
+            this.btnConfirmBooking.Click += new System.EventHandler(this.btnConfirmBooking_Click);
+            // 
+            // btnBooking
+            // 
+            this.btnBooking.Location = new System.Drawing.Point(-1, 233);
+            this.btnBooking.Name = "btnBooking";
+            this.btnBooking.Size = new System.Drawing.Size(256, 23);
+            this.btnBooking.TabIndex = 1;
+            this.btnBooking.Text = "จองสนาม";
+            this.btnBooking.Click += new System.EventHandler(this.btnBooking_Click);
             // 
             // calendarControl1
             // 
@@ -279,8 +323,8 @@
             // 
             this.tabManagePOS.Controls.Add(this.tabUnit);
             this.tabManagePOS.Controls.Add(this.tabProductType);
-            this.tabManagePOS.Controls.Add(this.tabGetProducts);
             this.tabManagePOS.Controls.Add(this.tabStore);
+            this.tabManagePOS.Controls.Add(this.tabGetProducts);
             this.tabManagePOS.Controls.Add(this.tabSell);
             this.tabManagePOS.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabManagePOS.Location = new System.Drawing.Point(0, 0);
@@ -446,24 +490,6 @@
             this.userList1.Size = new System.Drawing.Size(975, 466);
             this.userList1.TabIndex = 0;
             // 
-            // btnBooking
-            // 
-            this.btnBooking.Location = new System.Drawing.Point(-1, 233);
-            this.btnBooking.Name = "btnBooking";
-            this.btnBooking.Size = new System.Drawing.Size(256, 23);
-            this.btnBooking.TabIndex = 1;
-            this.btnBooking.Text = "จองสนาม";
-            this.btnBooking.Click += new System.EventHandler(this.btnBooking_Click);
-            // 
-            // btnConfirmBooking
-            // 
-            this.btnConfirmBooking.Location = new System.Drawing.Point(-1, 262);
-            this.btnConfirmBooking.Name = "btnConfirmBooking";
-            this.btnConfirmBooking.Size = new System.Drawing.Size(256, 23);
-            this.btnConfirmBooking.TabIndex = 2;
-            this.btnConfirmBooking.Text = "ยืนยันการจองสนาม";
-            this.btnConfirmBooking.Click += new System.EventHandler(this.btnConfirmBooking_Click);
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
@@ -481,6 +507,8 @@
             this.tabMain.ResumeLayout(false);
             this.tabCourtBooking.ResumeLayout(false);
             this.tabManageCourt.ResumeLayout(false);
+            this.tabDefinePrice.ResumeLayout(false);
+            this.tabDefinePrice.PerformLayout();
             this.tabPrommotion.ResumeLayout(false);
             this.tabPrommotion.PerformLayout();
             this.tabMember.ResumeLayout(false);
@@ -549,6 +577,8 @@
         private CourtBooking.ConfirmBookingList confirmBookingList1;
         private DevExpress.XtraEditors.SimpleButton btnConfirmBooking;
         private DevExpress.XtraEditors.SimpleButton btnBooking;
+        private System.Windows.Forms.TabPage tabDefinePrice;
+        private CourtBooking.DefinePriceList definePriceList1;
     }
 }
 
